@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>GameObject</Title>
+			<Author>Michael Wu</Author>
+			<Description>Gets the GameObject.</Description>
+			<Shortcut>go</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[gameObject]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Transform.Position</Title>
+			<Author>Michael Wu</Author>
+			<Description>Gets the GameObject's Position in world coordinates.</Description>
+			<Shortcut>tpos</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[transform.position]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Vector3</Title>
+			<Author>Michael Wu</Author>
+			<Description>Vector3.</Description>
+			<Shortcut>Vec</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[Vector3 ]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>GetComponent</Title>
+			<Author>Michael Wu</Author>
+			<Description>GetComponent.</Description>
+			<Shortcut>gmp</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[GetComponent<$Component$>();]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Component</ID>
+					<ToolTip>The Component to get.</ToolTip>
+					<Default>Component</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>AddComponent</Title>
+			<Author>Michael Wu</Author>
+			<Description>AddComponent.</Description>
+			<Shortcut>amp</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[AddComponent<$Component$>();]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Component</ID>
+					<ToolTip>The Component to add.</ToolTip>
+					<Default>Component</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Normalised Direction To</Title>
+			<Author>Michael Wu</Author>
+			<Description>Direction.</Description>
+			<Shortcut>direction</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[($V1$ - $V2$).normalized;]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>V1</ID>
+					<ToolTip>Towards.</ToolTip>
+					<Default>Vector3.zero</Default>
+				</Literal>
+				<Literal>
+					<ID>V2</ID>
+					<ToolTip>Origin.</ToolTip>
+					<Default>Vector3.zero</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Fast Sqrt</Title>
+			<Author>Michael Wu</Author>
+			<Description>Fast Square Root.</Description>
+			<Shortcut>sqrt</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[Fast.Sqrt($F$);]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>F</ID>
+					<ToolTip>Float to take the Square Root of.</ToolTip>
+					<Default>3.14159f</Default>
+				</Literal>
+			</Declarations>
+			<Imports>
+				<Import>
+					<Namespace>MW.Math.Magic</Namespace>
+				</Import>
+			</Imports>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Public Static Func</Title>
+			<Author>Michael Wu</Author>
+			<Description>Public Static Function.</Description>
+			<Shortcut>pstfunc</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+				public static $Ret$ $Name$()
+				{
+					// ...
+					
+					$end$
+				}
+				]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Ret</ID>
+					<ToolTip>Return Value.</ToolTip>
+					<Default>void</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Function Name.</ToolTip>
+					<Default>Func</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Static Func</Title>
+			<Author>Michael Wu</Author>
+			<Description>Static Function.</Description>
+			<Shortcut>stfunc</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+				static $Ret$ $Name$()
+				{
+					// ...
+					
+					$end$
+				}
+				]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Ret</ID>
+					<ToolTip>Return Value.</ToolTip>
+					<Default>void</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Function Name.</ToolTip>
+					<Default>Func</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Func</Title>
+			<Author>Michael Wu</Author>
+			<Description>Function.</Description>
+			<Shortcut>func</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+				$Ret$ $Name$()
+				{
+					// ...
+					
+					$end$
+				}
+				]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Ret</ID>
+					<ToolTip>Return Value.</ToolTip>
+					<Default>void</Default>
+				</Literal>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Function Name.</ToolTip>
+					<Default>Func</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Interp</Title>
+			<Author>Michael Wu</Author>
+			<Description>Interp.</Description>
+			<Shortcut>Interp</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+				IEnumerator $Name$()
+				{
+					float t = 0f;
+					
+					while (t <= 1f)
+					{
+						t += Time.deltaTime;
+						
+						// ...
+						
+						$end$
+						
+						yield return $Wait$;
+					}
+				}
+				]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Interpolation Name.</ToolTip>
+					<Default>Interp</Default>
+				</Literal>
+				<Literal>
+					<ID>Wait</ID>
+					<ToolTip>Yield.</ToolTip>
+					<Default>null</Default>
+				</Literal>
+			</Declarations>
+			<Imports>
+				<Import>
+					<Namespace>System.Collections</Namespace>
+				</Import>
+			</Imports>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Log</Title>
+			<Author>Michael Wu</Author>
+			<Description>Log.</Description>
+			<Shortcut>Log</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[Debug.Log($end$);]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Struct</Title>
+			<Author>Michael Wu</Author>
+			<Description>Struct.</Description>
+			<Shortcut>ustruct</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+				[Serializable]
+				public struct $Name$
+				{
+					// ...
+					
+					$end$
+				}
+				]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Name</ID>
+					<ToolTip>Name of this new Struct.</ToolTip>
+					<Default>Structure</Default>
+				</Literal>
+			</Declarations>
+			<Imports>
+				<Import>
+					<Namespace>System</Namespace>
+				</Import>
+			</Imports>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>SerializeField</Title>
+			<Author>Michael Wu</Author>
+			<Description>SerializeField.</Description>
+			<Shortcut>sf</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[[SerializeField] $Type$ $Var$]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Type</ID>
+					<ToolTip>Type of the new Serialised Field.</ToolTip>
+					<Default>float</Default>
+				</Literal>
+				<Literal>
+					<ID>Var</ID>
+					<ToolTip>The name of the new Serialised Field.</ToolTip>
+					<Default>F</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>RequireComponent</Title>
+			<Author>Michael Wu</Author>
+			<Description>RequireComponent.</Description>
+			<Shortcut>rqcmp</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[[RequireComponent(typeof($end$)]]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Initialise Camera</Title>
+			<Author>Michael Wu</Author>
+			<Description>Initialise Camera.</Description>
+			<Shortcut>incam</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[$end$ = Camera.main;]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>end</ID>
+					<ToolTip>The name of the Camera Variable.</ToolTip>
+					<Default>MainCamera</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Initialise Component</Title>
+			<Author>Michael Wu</Author>
+			<Description>Initialise Component.</Description>
+			<Shortcut>incmp</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[$Var$ = GetComponent<$Component$>();]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>Var</ID>
+					<ToolTip>The name of the Component Variable.</ToolTip>
+					<Default>Var</Default>
+				</Literal>
+				<Literal>
+					<ID>Component</ID>
+					<ToolTip>The Component Type.</ToolTip>
+					<Default></Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Ternary Operator</Title>
+			<Author>Michael Wu</Author>
+			<Description>Ternary Operator.</Description>
+			<Shortcut>ternary</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[($bCondition$) ? $True$ : $end$;]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>bCondition</ID>
+					<Default></Default>
+				</Literal>
+				<Literal>
+					<ID>True</ID>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>MDocs</Title>
+			<Author>Michael Wu</Author>
+			<Description>MDocs Auto Generator.</Description>
+			<Shortcut>docs</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+						/// <docs>$C1$</docs>
+						/// <docremarks>$C2$</docremarks>
+						/// <docreturns>$C3$</docreturns>]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>C1</ID>
+					<Default>Summary in Docs.</Default>
+				</Literal>
+				<Literal>
+					<ID>C2</ID>
+					<Default>Remarks in Docs.</Default>
+				</Literal>
+				<Literal>
+					<ID>C3</ID>
+					<Default>Returns in Docs.</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>AGGRESSIVE INLINING</Title>
+			<Author>Michael Wu</Author>
+			<Description>Aggressively inlines a method.</Description>
+			<Shortcut>FORCEINLINE</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[[MethodImpl(MethodImplOptions.AggressiveInlining)]$end$]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>C1</ID>
+					<Default>Summary in Docs.</Default>
+				</Literal>
+				<Literal>
+					<ID>C2</ID>
+					<Default>Remarks in Docs.</Default>
+				</Literal>
+				<Literal>
+					<ID>C3</ID>
+					<Default>Returns in Docs.</Default>
+				</Literal>
+			</Declarations>
+			<Imports>
+				<Import>
+					<Namespace>System.Runtime.CompilerServices</Namespace>
+				</Import>
+			</Imports>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Decorations</Title>
+			<Author>Michael Wu</Author>
+			<Description>MDocs Decorations.</Description>
+			<Shortcut>decor</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="XML">
+				<![CDATA[/// <decorations decor="$end$"></decorations>]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>UE_LOG</Title>
+			<Author>Michael Wu</Author>
+			<Description>UE_LOG().</Description>
+			<Shortcut>ulog</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="Visual C++">
+				<![CDATA[UE_LOG(LogTemp, Warning, TEXT("$end$"))]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+
+
+
+</CodeSnippets>
